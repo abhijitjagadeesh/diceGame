@@ -1,0 +1,90 @@
+body {
+  background: chocolate;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#game {
+  background: antiquewhite;
+  border: 2px solid black;
+  width: 1300px;
+  height: 650px;
+  padding: 20px;
+  /* display: none; */
+}
+
+.title,
+.player-info,
+.score-columns,
+.roll-button-container,
+.column {
+  margin-top: 20px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.score-columns {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 10px;
+}
+
+.score-columns > * {
+  width: 100%;
+}
+
+.column {
+  margin-bottom: 20px;
+}
+
+.roll-button-container {
+  padding: 30px;
+}
+
+#roll-button,
+#play-again-button {
+  background: chocolate;
+  border: none;
+  padding: 20px;
+  font-weight: bolder;
+  font-size: 48px;
+  cursor: pointer;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+#roll-button:active,
+#play-again-button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#gameover {
+  position: absolute;
+  width: 1300px;
+  height: 650px;
+  background-color: seashell;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+}
+
+.emoji {
+  font-size: 70px;
+  vertical-align: middle;
+  line-height: 2;
+}
