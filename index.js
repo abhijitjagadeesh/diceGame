@@ -3,10 +3,6 @@ var playersInfo = {
   player2: 0,
 };
 
-function initialSetup() {
-  document.getElementById("");
-}
-
 currentPlayer = 1;
 
 function getTotalPlayers() {
@@ -28,8 +24,6 @@ function updateScore(rolledNumber) {
 }
 
 function updateScoreDisplay() {
-  disableAllPlayers();
-  enableCurrentPlayer();
   document.getElementById("player" + currentPlayer + "-score").textContent =
     playersInfo["player" + currentPlayer];
 }
