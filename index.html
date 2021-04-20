@@ -5,34 +5,40 @@
     <meta charset="“UTF-8”" />
   </head>
   <body>
-    <div class="game-container">
+    <div id="game-container">
+      <div id="add-players">
+        <input id="player1" type="text" placeholder="Enter Player Name" />
+        <input id="player2" type="text" placeholder="Enter Player Name" />
+        <button id="add-players-button">Add</button>
+        <p id="message">Enter Players name and click Add to start the game !</p>
+      </div>
       <div id="game">
-        <div class="title">
+        <div id="title">
           <h1>*** Roll for Win ! ***</h1>
           <h4>First to reach 20 wins!</h4>
         </div>
-        <div class="player-info">
-          <h2 id="player-turn">Player 1 Turn</h2>
+        <div id="player-info">
+          <h2 id="player-turn"></h2>
         </div>
-        <div class="score-columns">
-          <div class="column">
-            <h2>Player 1 Score:</h2>
+        <div id="score-columns">
+          <div id="column">
+            <h2 id="first-player-score"></h2>
+            <h2 id="player0-score">0</h2>
+          </div>
+          <div id="column">
+            <h2 id="second-player-score"></h2>
             <h2 id="player1-score">0</h2>
           </div>
-          <div class="column">
-            <h2>Player 2 Score:</h2>
-            <h2 id="player2-score">0</h2>
-          </div>
         </div>
-        <div class="roll-button-container">
+        <div id="roll-button-container">
           <button id="roll-button">Roll Dice</button>
         </div>
       </div>
       <div id="gameover">
         <div>
-          <span class="emoji">&#x1F973;</span>
+          <span id="emoji">&#x1F973;</span>
           <h1 id="winner"></h1>
-          <span class="emoji">&#x1F973;</span>
+          <span id="emoji">&#x1F973;</span>
         </div>
         <button id="play-again-button">Play Again</button>
       </div>

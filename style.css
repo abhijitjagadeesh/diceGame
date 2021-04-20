@@ -6,12 +6,42 @@ body {
   align-items: center;
 }
 
-.game-container {
+#game-container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+#add-players {
+  background: antiquewhite;
+  border: 2px solid black;
+  width: 1300px;
+  height: 650px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  /* display: none; */
+}
+
+#add-players input {
+  /* border: 2px solid black; */
+  padding: 30px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+
+#add-players input:focus {
+  border: 2px solid black;
+}
+
+#errors {
+  padding: 10px;
+  display: none;
 }
 
 #game {
@@ -20,40 +50,41 @@ body {
   width: 1300px;
   height: 650px;
   padding: 20px;
-  /* display: none; */
+  display: none;
 }
 
-.title,
-.player-info,
-.score-columns,
-.roll-button-container,
-.column {
+#title,
+#player-info,
+#score-columns,
+#roll-button-container,
+#column {
   margin-top: 20px;
   text-align: center;
   border: 2px solid black;
 }
 
-.score-columns {
+#score-columns {
   display: flex;
   justify-content: center;
   gap: 1em;
   padding: 10px;
 }
 
-.score-columns > * {
+#score-columns > * {
   width: 100%;
 }
 
-.column {
+#column {
   margin-bottom: 20px;
 }
 
-.roll-button-container {
+#roll-button-container {
   padding: 30px;
 }
 
 #roll-button,
-#play-again-button {
+#play-again-button,
+#add-players-button {
   background: chocolate;
   border: none;
   padding: 20px;
@@ -83,7 +114,7 @@ body {
   display: none;
 }
 
-.emoji {
+#emoji {
   font-size: 70px;
   vertical-align: middle;
   line-height: 2;
